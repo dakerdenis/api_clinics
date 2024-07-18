@@ -25,7 +25,9 @@ function getPharmacies($username, $password) {
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, $xml_post_string);
     curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+    
     $response = curl_exec($ch);
     if ($response === false) {
         throw new Exception(curl_error($ch), curl_errno($ch));
