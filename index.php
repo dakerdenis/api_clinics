@@ -74,6 +74,7 @@ try {
     </script>
 </head>
 <body>
+    asdasd
     <h1>Pharmacies</h1>
     <div id="pharmacies-container"></div>
 </body>
