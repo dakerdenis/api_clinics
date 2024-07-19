@@ -11,13 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
             pharmacies.forEach(pharmacy => {
                 const pharmacyDiv = document.createElement('div');
                 pharmacyDiv.innerHTML = `
-                    <h2>${pharmacy.basic.NAME}</h2>
-                    <p>ID: ${pharmacy.basic.CUSTOMER_ID}</p>
-                    <p>Location: (${pharmacy.basic.LOCATION_X}, ${pharmacy.basic.LOCATION_Y})</p>
-                    <div>
-                        <h3>Details:</h3>
-                        <pre>${JSON.stringify(pharmacy.details, null, 2)}</pre>
-                    </div>
+                    <h2>${pharmacy.NAME}</h2>
+                    <p>ID: ${pharmacy.CUSTOMER_ID}</p>
+                    <p>Location: (${pharmacy.LOCATION_X}, ${pharmacy.LOCATION_Y})</p>
                 `;
                 container.appendChild(pharmacyDiv);
             });
