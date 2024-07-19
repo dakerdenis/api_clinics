@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pharmacies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .pharmacy-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        .pharmacy {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .pharmacy:last-child {
+            border-bottom: none;
+        }
+        .pharmacy h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #d32f2f;
+        }
+        .pharmacy p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #333;
+        }
+        .map-link {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+        }
+        .map-link  img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="pharmacy-container">
+        <h1>Apteklər</h1>
+        <div id="pharmacies-container"></div>
+    </div>
+</body>
+</html>
