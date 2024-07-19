@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :focus,
+  :active {
+    outline: none;
+  }
+  
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Mulish', sans-serif;
+  }
+  
+  body.lock {
+    overflow: hidden;
+  }
+  
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-ms-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: 400;
+  }
+  .main__wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+.main__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__header__logo {
+  width: 100px;
+  height: 100px;
+}
+.main__header__logo img {
+  width: 100%;
+}
+.main__header__name {
+    padding: 20px 0px 50px 0px;
+    color: rgba(87, 86, 86, 1);
+    font-size: 27px;
+    font-weight: 600;
+}
+.container{
+width: 600px;
+min-height: 100vh; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    width: 49.9%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+.tablinks{
+  width: 100%;
+  padding: 15px 0px;
+  text-align: center;
+  font-size: 18px;
+}
+.tabcontent {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+.elements__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.elements_element {
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #f6f7f7;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    color: #3e4953;
+    display: flex;
+    justify-content: space-between;
+
+}
+.elements_element__container{
+  width: 85%;
+
+  height: 100%;
+}
+.elements_element__location{
+  width: 13%;
+  display: flex;
+  justify-content: end;
+
+}
+.elements_element__location a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.elements_element__location img {
+  width: 30px;
+}
+.elements_element_name {
+    font-weight: 600;
+    margin-bottom: 7px;
+    font-size: 16px;
+    color: #BE2A2A;
+    line-height: 22px;
+}
+.elements_element_adress {
+    margin-bottom: 5px;
+}
+
+.elements_element_number {
+}
+
+
+
+@media screen and (max-width : 500px) {
+  .main__wrapper{
+    padding: 0;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+}

@@ -10,15 +10,17 @@
             max-width: 600px;
             margin: 20px auto;
             padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #f9f9f9;
+
         }
         .pharmacy {
             display: flex;
             align-items: center;
             padding: 10px;
-            border-bottom: 1px solid #ddd;
+            color: #3e4953;
+            padding: 10px 30px;
+            background-color: #f6f7f7;
+            border-radius: 9px;
+            margin-bottom: 20px;
         }
         .pharmacy:last-child {
             border-bottom: none;
@@ -47,12 +49,37 @@
             height: 100%;
             object-fit: contain;
         }
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .red_color {
+            color: #BE2A2A;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .tablinks {
+            width: 100%;
+            padding: 15px 0px;
+            text-align: center;
+            font-size: 18px;
+        }
     </style>
     <script src="script.js" defer></script>
 </head>
 <body>
     <div class="pharmacy-container">
-        <h1>Apteklər</h1>
+        <div class="tab">
+            <h1 class="tablinks  red_color">
+                Apteklər
+            </h1>
+        </div>
         <div id="pharmacies-container"></div>
     </div>
 </body>

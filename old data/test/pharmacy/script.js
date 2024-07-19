@@ -7,10 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error('Response:', pharmacies.response);
                 return;
             }
-
-            // Sort pharmacies by NAME from A to Z
-            pharmacies.sort((a, b) => a.NAME.localeCompare(b.NAME));
-
             const container = document.getElementById('pharmacies-container');
             pharmacies.forEach(pharmacy => {
                 const mapLink = `https://www.google.com/maps?q=${pharmacy.LOCATION_Y},${pharmacy.LOCATION_X}`;
